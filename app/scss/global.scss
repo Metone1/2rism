@@ -1,0 +1,142 @@
+@use 'sass:math';
+$containerWidth: 1440;
+$breakpoint1438: 1438 + px;
+$breakpoint1200: 1200 + px;
+$breakpoint1000: 1000 + px;
+$breakpoint800: 800 + px;
+$breakpoint600: 600 + px;
+
+@import "_header";
+@import "_main";
+@import "_footer";
+@import "_search";
+@import "_popular";
+@import "_hotels";
+@import "_travels";
+@import "_activities";
+@import "_aboutUs";
+
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   bottom: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 14px;
+   font-weight: 400;
+   color: #161414;
+   font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+._container {
+   max-width: 1440px;
+   margin: 0px auto;
+   position: relative;
+   z-index: 100;
+}
+
+._ibg img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   object-fit: cover;
+   z-index: 0;
+}
+
+.title {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 1.5;
+   color: #161414;
+   display: flex;
+   justify-content: space-between;
+
+   @media(max-width : $breakpoint600) {
+      flex-direction: column;
+      font-size: 21px;
+      align-items: center;
+   }
+}
+
+.title-btn {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   gap: 4px;
+   width: 105px;
+   height: 44px;
+   background: #F6F4FF;
+   border-radius: 12px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #5243C2;
+
+   &:hover {
+      background: #dfd8ff;
+   }
+}
+
+.scroll {
+   &::-webkit-scrollbar {
+      width: 10px;
+   }
+
+   &::-webkit-scrollbar-track {
+      -webkit-box-shadow: 5px 5px 5px -5px rgba(105, 50, 144, 0.2) inset;
+      background-color: #f9f9fd;
+      border-radius: 10px;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: linear-gradient(180deg, #b2a4f9, #5243C2);
+   }
+}
+
+.footer {
+   background: #F9F9F9;
+}

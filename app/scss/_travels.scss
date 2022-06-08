@@ -1,0 +1,111 @@
+.travels__container {
+   padding: 120px 32px 0 32px;
+
+   @media(max-width : $breakpoint1000) {
+      padding-top: 60px;
+   }
+}
+
+.travels__title {
+   padding-bottom: 64px;
+
+   @media (max-width: $breakpoint600) {
+      padding-bottom: 32px;
+      text-align: center;
+   }
+}
+
+.travels__block {
+   display: flex;
+   flex-direction: row;
+   gap: 32px;
+
+   @media (max-width: $breakpoint1438) {
+      flex-direction: column;
+   }
+}
+
+.travel__block {
+   flex: 0 0 48.8%;
+   display: flex;
+   gap: 32px;
+
+   @media (max-width: $breakpoint1000) {
+      gap: 16px;
+   }
+
+   @media (max-width: $breakpoint600) {
+      flex-direction: column;
+      align-items: center;
+
+   }
+}
+
+.travel__image {
+   width: 320px;
+   height: 380px;
+   border-radius: 24px;
+
+   @media (max-width: $breakpoint800) {
+      width: 240px;
+      height: 320px;
+   }
+}
+
+.travel__description {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+
+   @media (max-width: $breakpoint1438) {
+      flex: 0 1 60%;
+   }
+}
+
+.description__title {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 1.5;
+   gap: 16px;
+
+   @media (max-width: $breakpoint800) {
+      font-size: 18px;
+   }
+
+   @media (max-width: $breakpoint600) {
+      text-align: center;
+   }
+}
+
+.description__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 2;
+   color: #5B5B5B;
+   flex: 1 1 auto;
+   overflow: auto;
+   overflow-x: hidden;
+   max-height: 300px;
+
+   @media (max-width: $breakpoint800) {
+      max-height: 240px;
+   }
+}
+
+.description__info {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.5;
+   color: #878787;
+   display: flex;
+   align-items: flex-end;
+   gap: 24px;
+
+   @media (max-width: $breakpoint1000) {
+      gap: 8px;
+   }
+}
+
+.info__image {
+   padding-right: 4px;
+}

@@ -1,0 +1,90 @@
+.container__about {
+   padding: 120px 148px;
+
+   @media (max-width:$breakpoint1438) {
+      padding: 120px 74px;
+   }
+
+   @media (max-width:$breakpoint1000) {
+      padding: 60px 74px;
+   }
+
+   @media (max-width:$breakpoint600) {
+      padding: 60px 32px;
+   }
+}
+
+.about__block {
+   display: flex;
+   gap: 32px;
+   justify-content: space-evenly;
+
+   @media (max-width:$breakpoint1000) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+   }
+}
+
+.about__description {
+   display: flex;
+   flex-direction: column;
+   height: 316px;
+   gap: 32px;
+   margin: 86px 0 0 0;
+
+   @media (max-width:$breakpoint1438) {
+      gap: 12px;
+      margin: 23px 0 0 0;
+   }
+
+   @media (max-width:$breakpoint1000) {
+      margin: 0;
+      align-items: center;
+   }
+}
+
+.about__description-title {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 1.5;
+
+   @media (max-width:$breakpoint600) {
+      font-size: 21px;
+   }
+}
+
+.about__description-text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 2;
+   color: #5B5B5B;
+   max-height: 190px;
+   overflow: auto;
+   overflow-x: hidden;
+}
+
+
+
+.about__description-button {
+   width: 133px !important;
+   height: 44px;
+}
+
+.about__image {
+   width: 556px;
+   height: 488px;
+   border-radius: 24px;
+
+   @media (max-width:$breakpoint1438) {
+      width: 426px;
+      height: 358px;
+   }
+
+   @media (max-width:$breakpoint600) {
+      width: 70vw;
+      height: 60vw;
+      min-width: 256px;
+      min-height: 280px;
+   }
+}
