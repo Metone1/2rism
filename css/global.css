@@ -799,6 +799,13 @@
   border-radius: 12px;
 }
 
+@media (max-width: 500px) {
+  .place__image:hover {
+    width: 256px;
+    height: 230px;
+  }
+}
+
 .place__title {
   font-weight: 500;
   font-size: 16px;
