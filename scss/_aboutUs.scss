@@ -22,7 +22,7 @@
    @media (max-width:$breakpoint1000) {
       flex-direction: column;
       align-items: center;
-      gap: 0;
+      gap: 32px;
    }
 }
 
@@ -34,8 +34,7 @@
    margin: 86px 0 0 0;
 
    @media (max-width:$breakpoint1438) {
-      gap: 12px;
-      margin: 23px 0 0 0;
+      margin: 24px 0 0 0;
    }
 
    @media (max-width:$breakpoint1000) {
