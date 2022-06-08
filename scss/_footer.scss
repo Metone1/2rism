@@ -180,6 +180,10 @@
    color: #161414;
    border: none;
    outline: 0;
+
+   @media (max-width: $breakpoint600) {
+      width: 150px;
+   }
 }
 
 .email__btn {
