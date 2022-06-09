@@ -38,7 +38,7 @@
    @media (max-width: $breakpoint600) {
       flex-direction: column;
       align-items: center;
-
+      max-height: 100vh;
    }
 }
 
