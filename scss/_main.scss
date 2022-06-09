@@ -3,26 +3,10 @@
 }
 
 .main-block__container {
-   padding: 183px 288px;
+   padding: 183px 0;
    display: flex;
    flex-direction: column;
    align-items: center;
-
-   @media(max-width : $breakpoint1438) {
-      padding: 140px 288px;
-   }
-
-   @media(max-width : $breakpoint1200) {
-      padding: 140px 260px;
-   }
-
-   @media(max-width : $breakpoint1000) {
-      padding: 140px 105px;
-   }
-
-   @media(max-width : $breakpoint800) {
-      padding: 140px 95px;
-   }
 
    @media(max-width : $breakpoint600) {
       padding: 70px 40px;

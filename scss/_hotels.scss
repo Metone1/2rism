@@ -75,9 +75,6 @@
    align-items: flex-start
 }
 
-.hotel__doth {
-   flex-direction: none;
-}
 
 .hotel__place {
    font-size: 13px;
@@ -85,6 +82,7 @@
    color: #979797;
    padding-left: 4px;
    flex: 1 1 auto;
+   max-width: 216px;
 
    @media(max-width : $breakpoint600) {
       flex: 0 1 auto;

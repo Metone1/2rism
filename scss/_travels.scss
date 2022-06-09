@@ -29,6 +29,7 @@
    flex: 0 0 48.8%;
    display: flex;
    gap: 32px;
+   max-height: 380px;
 
    @media (max-width: $breakpoint1000) {
       gap: 16px;
@@ -66,7 +67,6 @@
    font-weight: 600;
    font-size: 20px;
    line-height: 1.5;
-   gap: 16px;
 
    @media (max-width: $breakpoint800) {
       font-size: 18px;

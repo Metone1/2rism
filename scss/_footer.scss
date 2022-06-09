@@ -34,6 +34,8 @@
    font-size: 13px;
    line-height: 1.5;
    color: #5B5B5B;
+   max-height: 250px;
+   overflow: hidden;
 }
 
 .links__icons {
@@ -52,7 +54,7 @@
    display: flex;
    gap: 64px;
    width: 505.5px;
-   height: 163px;
+   height: 100%;
 
    @media (max-width: $breakpoint1000) {
       gap: 3vw;
@@ -74,7 +76,7 @@
 
 .info__block {
    min-width: 125.83px;
-   height: 163px;
+   height: 100%;
 
    @media (max-width: $breakpoint1000) {
       min-width: 100px;
@@ -109,7 +111,7 @@
    flex-direction: column;
    gap: 20px;
    width: 388px;
-   height: 146px;
+   height: 100%;
 
    @media (max-width: $breakpoint1000) {
       width: 505px;
