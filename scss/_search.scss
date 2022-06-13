@@ -1,5 +1,6 @@
 .page__search {
    position: relative;
+   z-index: 5;
 }
 
 .search__container {
@@ -20,7 +21,7 @@
 
    @media (max-width:$breakpoint600) {
       width: 300px;
-      height: 200px;
+      height: 210px;
    }
 }
 
@@ -33,6 +34,8 @@
 
    @media (max-width:$breakpoint600) {
       flex-direction: column;
+      padding: 8px 0 8px 0;
+
    }
 
 }
@@ -111,8 +114,8 @@
 
    @media (max-width:$breakpoint600) {
       position: relative;
-      top: -75px;
-      left: 105px;
+      top: -70px;
+      left: 110px;
    }
 
    &:hover {
