@@ -23,7 +23,7 @@ window.addEventListener('scroll', function () {
 //=============прокрутка при клике===========
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-console.log(menuLinks.length)
+
 if (menuLinks.length > 0) {
    menuLinks.forEach(menuLink => {
       menuLink.addEventListener("click", onMenuLinkClick)
