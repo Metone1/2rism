@@ -2,13 +2,15 @@
    margin-top: 31px;
    position: fixed;
    width: 100%;
-   height: 10%;
+   height: 64px;
    left: 0;
    top: 0;
    z-index: 100;
+   transition: all 0.3s ease 0s;
 }
 
 .header.scroll {
+   transition: all 0.5s ease 0s;
    background-color: rgba(28, 28, 28, 0.876);
    margin-top: 0px;
    justify-content: center;
@@ -112,7 +114,7 @@
    flex-grow: 1;
 
    @media (max-width : $breakpoint600) {
-      width: 100%;
+      width: 80%;
    }
 }
 
@@ -140,6 +142,13 @@
 
 .hi__image {
    margin-left: 8px;
-   width: 48px;
-   height: 48px;
+   width: 38px;
+   height: 38px;
+
+   & img {
+      @media (max-width : $breakpoint600) {
+         width: 38px;
+         height: 38px;
+      }
+   }
 }
