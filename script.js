@@ -1,3 +1,5 @@
+//=======================burger=====
+
 const iconMenu = document.querySelector('.menu__icon');
 const menuHeader = document.querySelector('.header__menu');
 if (iconMenu) {
@@ -17,4 +19,35 @@ window.addEventListener('scroll', function () {
       header.classList.remove('scroll');
    }
 })
+
+//=============прокрутка при клике===========
+
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+console.log(menuLinks.length)
+if (menuLinks.length > 0) {
+   menuLinks.forEach(menuLink => {
+      menuLink.addEventListener("click", onMenuLinkClick)
+   });
+
+   function onMenuLinkClick(e) {
+      const menuLink = e.target;
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+         const gotoBlock = document.querySelector(menuLink.dataset.goto);
+         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').clientHeight + 50;
+
+         if (iconMenu.classList.contains('active')) {
+            document.body.classList.remove('lock');
+            iconMenu.classList.remove('active');
+            menuHeader.classList.remove('active');
+         }
+
+         window.scrollTo
+            ({
+               top: gotoBlockValue,
+               behavior: "smooth"
+            });
+         e.preventDefault();
+      }
+   }
+};
 

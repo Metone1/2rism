@@ -565,6 +565,7 @@
 .page__search {
   position: relative;
   z-index: 5;
+  padding-bottom: 64px;
 }
 
 .search__container {
@@ -728,13 +729,13 @@
 }
 
 .popular__container {
-  padding: 240px 32px 0 32px;
+  padding: 176px 32px 0 32px;
   color: #161414;
 }
 
 @media (max-width: 1000px) {
   .popular__container {
-    padding-top: 170px;
+    padding-top: 106px;
   }
 }
 
@@ -1347,6 +1348,7 @@
             transform: rotate(45deg) translate(0, 50%);
   }
   .header__menu {
+    content: '';
     position: fixed;
     z-index: 4;
     top: 0;
@@ -1377,7 +1379,10 @@
     display: block;
   }
   .menu__list > li {
-    font-size: 32px;
+    font-size: 34px;
+  }
+  .menu__list > li:hover {
+    text-decoration: underline;
   }
   .menu__list > li:not(:last-child) {
     margin-bottom: 30px;

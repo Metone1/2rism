@@ -60,6 +60,7 @@
    }
 
    .header__menu {
+      content: '';
       position: fixed;
       z-index: 4;
       top: 0;
@@ -90,7 +91,12 @@
    }
 
    .menu__list>li {
-      font-size: 32px;
+      font-size: 34px;
+
+
+      &:hover {
+         text-decoration: underline;
+      }
 
       &:not(:last-child) {
          margin-bottom: 30px;
