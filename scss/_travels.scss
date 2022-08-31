@@ -90,6 +90,14 @@
    @media (max-width: $breakpoint800) {
       max-height: 240px;
    }
+
+   @media (max-width: $breakpoint600) {
+      max-height: 200px;
+   }
+
+   @media (max-width: 328px) {
+      max-height: 180px;
+   }
 }
 
 .description__info {
